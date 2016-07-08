@@ -20,7 +20,7 @@
 - Excluir comentário do post
 - Curtir post
 
-## Tasks para a serem feitas
+## Tasks a serem feitas
 
 - Encontrar amigos
 - Sugestão de amigos
