@@ -1,0 +1,12 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: mini_social_network_development
+
+test:
+  <<: *default
+  database: mini_social_network_test

@@ -1,0 +1,14 @@
+@import "vendor/bootstrap";
+
+body {
+  padding-top: 20px;
+}
+
+.menu {
+  padding-left: 0;
+
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
