@@ -1,0 +1,9 @@
+<div id="post-page"></div>
+
+<%= content_for :bottom_js do %>
+<script>
+  window.post = <%= raw @post %>
+</script>
+
+  <%= javascript_include_tag :posts %>
+<% end %>

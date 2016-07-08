@@ -1,1 +1,10 @@
+<div id="feed"></div>
 
+<%= content_for :bottom_js do %>
+  <script>
+    window.currentUserId = <%= current_user.id %>;
+    window.currentUserName = "<%= current_user.to_s %>";
+  </script>
+
+  <%= javascript_include_tag :home %>
+<% end %>

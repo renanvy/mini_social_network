@@ -25,6 +25,9 @@
     </div>
 
     <%= javascript_include_tag 'application' %>
+
+    <%= yield :bottom_js %>
+
     <script>
       $(function(){
         var notice = "<%= flash[:notice] %>"
