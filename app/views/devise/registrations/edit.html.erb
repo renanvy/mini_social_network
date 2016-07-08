@@ -1,0 +1,20 @@
+<h2>Atualizar perfil</h2>
+
+<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name),
+  html: { method: :put }) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :email %>
+
+  <%= f.input :first_name %>
+
+  <%= f.input :last_name %>
+
+  <%= f.input :password %>
+
+  <%= f.input :password_confirmation %>
+
+  <%= f.input :current_password %>
+
+  <%= f.submit 'Salvar', class: 'btn btn-success', data: { disable_with: 'Salvando...' } %>
+<% end %>

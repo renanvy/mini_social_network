@@ -13,6 +13,8 @@ gem 'jquery-rails'
 
 gem 'simple_form', '~> 3.2'
 gem 'responders'
+# AUTHORIZATION AND AUTHENTICATION
+gem 'devise', '~> 3.5'
 
 group :production do
   gem 'rails_12factor'

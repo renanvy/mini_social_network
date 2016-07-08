@@ -1,0 +1,15 @@
+<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <h2>Cadastre-se</h2>
+
+  <%= f.error_notification %>
+
+  <%= f.input :email %>
+  <%= f.input :first_name %>
+  <%= f.input :last_name %>
+  <%= f.input :password %>
+  <%= f.input :password_confirmation %>
+
+  <%= f.submit 'Cadastrar', class: 'btn btn-success' %>
+
+  <%= link_to 'Já possui uma conta?', new_user_session_path %>
+<% end %>
