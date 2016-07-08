@@ -25,5 +25,14 @@
     </div>
 
     <%= javascript_include_tag 'application' %>
+    <script>
+      $(function(){
+        var notice = "<%= flash[:notice] %>"
+        $.notify(notice, "success" );
+
+        var alert = "<%= flash[:alert] %>"
+        $.notify(alert, "error" );
+       });
+    </script>
   </body>
 </html>
