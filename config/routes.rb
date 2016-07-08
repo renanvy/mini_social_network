@@ -10,5 +10,8 @@ Rails.application.routes.draw do
   end
 
   resources :comments, only: [:create, :update, :destroy]
+
+  resources :likes, only: [:create, :destroy]
+
   root 'home#index'
 end

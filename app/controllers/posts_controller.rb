@@ -5,7 +5,7 @@ class PostsController < ApplicationController
     posts = Post.ordered
 
     render(
-      json: posts.includes(:user, comments: :user),
+      json: posts.includes(:user, :user_likes, comments: :user),
       current_user: current_user
     )
   end
