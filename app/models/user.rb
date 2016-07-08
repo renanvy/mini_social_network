@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  normalize :email, with: :downcase
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 

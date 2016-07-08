@@ -71,6 +71,8 @@ GEM
     minitest (5.8.4)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
+    normalize_attributes (0.2.0)
+      activerecord
     orm_adapter (0.5.0)
     pg (0.18.4)
     quiet_assets (1.1.0)
@@ -145,6 +147,7 @@ DEPENDENCIES
   bullet
   devise (~> 3.5)
   jquery-rails
+  normalize_attributes
   pg
   quiet_assets
   rails (= 4.2.6)
