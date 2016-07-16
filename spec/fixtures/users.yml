@@ -4,3 +4,14 @@ john_doe:
   first_name: 'John'
   last_name: 'Doe'
   encrypted_password: <%= Devise::Encryptor.digest(User, '12345678') %>
+  created_at: <%= Time.current %>
+  updated_at: <%= Time.current %>
+
+mary_doe:
+  id: 2
+  email: 'mary.doe@example.com'
+  first_name: 'Mary'
+  last_name: 'Doe'
+  encrypted_password: <%= Devise::Encryptor.digest(User, '12345678') %>
+  created_at: <%= Time.current %>
+  updated_at: <%= Time.current %>

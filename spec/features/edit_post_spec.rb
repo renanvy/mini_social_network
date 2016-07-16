@@ -6,7 +6,7 @@ feature 'Edit a post' do
 
   background do
     user = users(:john_doe)
-    @post = posts(:post_1)
+    @post = posts(:post_2)
 
     login_as(user, scope: :user)
     visit '/'
