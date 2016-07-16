@@ -51,6 +51,7 @@ class Post extends React.Component {
             <div className="col-md-12">
               <textarea
                 ref="text"
+                id="post_text"
                 className="form-control"
                 defaultValue={this.props.text}>
               </textarea>
@@ -82,15 +83,17 @@ class Post extends React.Component {
       return (
         <div>
           <div className="btn-group">
-            <a
+            <button
+              type="button"
               onClick={this.handleEditElement.bind(this)}
               className="btn btn-default btn-xs">Editar
-            </a>
+            </button>
 
-            <a
+            <button
+              type="button"
               onClick={this.handleDelete.bind(this)}
               className="btn btn-danger btn-xs">Remover
-            </a>
+            </button>
           </div>
 
           <br /><br />
@@ -103,7 +106,10 @@ class Post extends React.Component {
 
   render () {
     return (
-      <div className="jumbotron" style={{background: "#fcfcea"}}>
+      <div
+        id={`post_${this.props.id}`}
+        className="jumbotron"
+        style={{background: "#fcfcea"}}>
         <h4>
           <a href={`/users/${this.props.user_id}`}>
             {this.props.user_full_name}
