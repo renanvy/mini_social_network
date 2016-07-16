@@ -22,12 +22,22 @@ gem 'devise', '~> 3.5'
 # API
 gem 'active_model_serializers', '0.9.3'
 
-group :production do
-  gem 'rails_12factor'
-end
-
 group :development do
   gem 'quiet_assets'
   gem 'bullet'
   gem 'faker'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'poltergeist'
+  gem 'database_cleaner'
+end
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.4'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
