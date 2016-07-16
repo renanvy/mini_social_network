@@ -16,8 +16,6 @@ feature 'Edit a post' do
     expect(page).to have_css("#post_#{@post.id}")
 
     within "#post_#{@post.id}" do
-      expect(page).to have_content('Editar')
-
       click_on 'Editar'
 
       fill_in 'post_text', with: 'Text changed!'
@@ -32,8 +30,6 @@ feature 'Edit a post' do
     expect(page).to have_css("#post_#{@post.id}")
 
     within "#post_#{@post.id}" do
-      expect(page).to have_content('Editar')
-
       click_on 'Editar'
 
       fill_in 'post_text', with: ''
