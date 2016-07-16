@@ -7,8 +7,9 @@
 3. `bundle install`
 4. `rake db:create`
 5. `rake db:migrate`
-6. `rails s`
-7. `acesse localhost:3000`
+6. `rake db:seed`
+7. `rails s`
+8. `acesse localhost:3000`
 
 ## Funcionalidades
 
