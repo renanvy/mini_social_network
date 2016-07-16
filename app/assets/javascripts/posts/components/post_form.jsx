@@ -18,11 +18,12 @@ class PostForm extends React.Component {
   render () {
     return (
       <div>
-        <form onSubmit={this.handleSubmit.bind(this)}>
+        <form onSubmit={this.handleSubmit.bind(this)} id="new_post">
           <div className="row">
             <div className="col-md-12">
               <textarea
                 ref="text"
+                id="post_text"
                 className="form-control"
                 rows="5"
                 placeholder="O que você está pensando?">

@@ -13,7 +13,7 @@ class PostList extends React.Component {
     });
 
     return (
-      <div>
+      <div id="post_list">
         {posts}
       </div>
     );
