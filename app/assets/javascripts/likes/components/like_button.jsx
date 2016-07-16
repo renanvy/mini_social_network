@@ -49,13 +49,14 @@ class LikeButton extends React.Component {
   render () {
     return (
       <div style={{marginTop: 10}}>
-      <a
+      <button
+        type="button"
         onClick={this.state.postLiked ? this.handleUnlikePost.bind(this) : this.handleLikePost.bind(this)}
-        className="link-social like"
+        className="like-button"
         style={{cursor: "pointer"}}>
 
         {`${this.state.buttonText} (${this.state.likesCount})`}
-      </a>
+      </button>
       </div>
     );
   }
