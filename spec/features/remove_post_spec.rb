@@ -16,8 +16,6 @@ feature 'Remove a post' do
     expect(page).to have_css("#post_#{@post.id}")
 
     within "#post_#{@post.id}" do
-      expect(page).to have_content('Remover')
-
       click_on 'Remover'
     end
 
