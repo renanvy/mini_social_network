@@ -11,6 +11,10 @@
 7. `rails s`
 8. `acesse localhost:3000`
 
+## Rodar os testes
+
+`rspec spec/`
+
 ## Funcionalidades
 
 - Publicar post
@@ -26,5 +30,4 @@
 - Encontrar amigos
 - Sugestão de amigos
 - Adicionar amigos
-- Testes
 - Utilizar o Fluxo com React: https://github.com/fluxo-js/fluxo
