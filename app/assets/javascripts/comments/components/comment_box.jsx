@@ -98,11 +98,13 @@ class CommentBox extends React.Component {
   render () {
     return (
       <div style={{marginTop: 20, background: "#feffcb", padding: 20, border: "1px solid #d8dd80"}}>
-        <a
+        <button
+          type="button"
+          className="button-link"
           onClick={this.handleOpenCommentBox.bind(this)}
           style={{cursor: "pointer"}}>
           Comentários ({this.state.comments.length})
-        </a>
+        </button>
 
         {this.renderCommentBox()}
       </div>

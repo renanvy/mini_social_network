@@ -132,7 +132,7 @@ class Post extends React.Component {
         <CommentBox
           postId={this.props.id}
           userFullName={this.props.user_full_name}
-          currentUserId={this.props.user_id}
+          currentUserId={this.props.currentUserId}
           comments={this.props.comments}
         />
       </div>

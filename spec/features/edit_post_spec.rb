@@ -12,7 +12,7 @@ feature 'Edit a post' do
     visit '/'
   end
 
-  scenario 'with valid information', js: true do
+  scenario 'with success', js: true do
     expect(page).to have_css("#post_#{@post.id}")
 
     within "#post_#{@post.id}" do
@@ -26,7 +26,7 @@ feature 'Edit a post' do
     end
   end
 
-  scenario 'with invalid information', js: true do
+  scenario 'without success', js: true do
     expect(page).to have_css("#post_#{@post.id}")
 
     within "#post_#{@post.id}" do

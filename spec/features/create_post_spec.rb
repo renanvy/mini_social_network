@@ -9,7 +9,7 @@ feature 'Create a new post' do
     visit '/'
   end
 
-  scenario 'with correct informations', js: true do
+  scenario 'with success', js: true do
     expect(page).to have_css('#new_post')
 
     within '#new_post' do
@@ -25,7 +25,7 @@ feature 'Create a new post' do
     end
   end
 
-  scenario 'with invalid informations', js: true do
+  scenario 'without success', js: true do
     expect(page).to have_css('#new_post')
 
     within '#new_post' do

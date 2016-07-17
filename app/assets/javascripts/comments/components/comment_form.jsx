@@ -21,7 +21,11 @@ class CommentForm extends React.Component {
         <form onSubmit={this.handleSubmit.bind(this)}>
           <div className="row">
             <div className="col-md-12">
-              <textarea ref="text" className="form-control" rows="3"></textarea>
+              <textarea
+                ref="text"
+                className="form-control"
+                rows="3"
+                id="comment_text"></textarea>
             </div>
           </div>
 

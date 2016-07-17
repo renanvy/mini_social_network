@@ -123,7 +123,9 @@ class Comment extends React.Component {
 
   render () {
     return (
-      <div style={{marginTop: 10, marginBottom: 20, background: "#f5f5f5", padding: 10}}>
+      <div
+        style={{marginTop: 10, marginBottom: 20, background: "#f5f5f5", padding: 10}}
+        id={`comment_${this.props.id}`}>
         <p style={{fontSize: 14}}>
           <a href={`/users/${this.props.user_id}`}>
             {this.props.user_full_name}
