@@ -72,6 +72,7 @@ class Comment extends React.Component {
               <textarea
                 ref="text"
                 className="form-control"
+                id="comment_text"
                 defaultValue={this.props.text}>
               </textarea>
             </div>
@@ -102,15 +103,17 @@ class Comment extends React.Component {
       return (
         <div>
           <div className="btn-group" style={{marginTop: -15}}>
-            <a
+            <button
+              type="button"
               onClick={this.handleEditElement.bind(this)}
               className="btn btn-default btn-xs">Editar
-            </a>
+            </button>
 
-            <a
+            <button
+              type="button"
               onClick={this.handleDelete.bind(this)}
               className="btn btn-danger btn-xs">Remover
-            </a>
+            </button>
           </div>
 
           <br /><br />
